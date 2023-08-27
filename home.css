@@ -1,0 +1,92 @@
+.mask{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    /* background-color: antiquewhite; */
+}
+
+.intro {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    object-fit: cover;
+}
+
+.mask::after{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #000;
+    opacity: 0.8;
+}
+.home{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.content {
+    position: absolute;
+    transition: translate(-50%, -50%);
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    /* background-color: rgb(192, 201, 208); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.home .content h1 {
+    font-size: 4rem;
+    padding: 0.6rem 0 1.5rem;
+}
+
+.content h5{
+    font-size: 1.4rem;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width:640px) {
+    .home .content h1 {
+        font-size: 2.5rem;
+     
+    }
+        
+    .content h5{
+        font-size: 1rem;
+        
+    }
+   
+}
+@media screen and (max-width:330px) {
+    .home .content h1 {
+        font-size: 2rem;
+        left: 50%;
+    }
+        
+   
+}
+@media screen and (max-width:640px) {
+    .home .content h1 {
+        font-size: 2.5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+        
+    .content h5{
+        font-size: 1rem;
+        
+    }
+   
+}
